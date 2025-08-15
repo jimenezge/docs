@@ -159,7 +159,7 @@ Only up to 15 uppercase ASCII letters, digits and dashes are allowed.
 Example: EXAMPLE.
 
 
-NetBIOS domain name [GUAMIRA]:
+NetBIOS domain name [DOMAINAME]:
 
 Do you want to configure chrony with NTP server or pool address? [no]: yes
 Enter NTP source server addresses separated by comma, or press Enter to skip:
@@ -197,7 +197,7 @@ Configuring directory server (dirsrv). Estimated time: 30 seconds
 Validate installation settings ...
 Create file system structures ...
 Perform SELinux labeling ...
-Create database backend: dc=guamira,dc=net ...
+Create database backend: dc=domainname,dc=net ...
 Perform post-installation tasks ...
   [2/43]: tune ldbm plugin
   [3/43]: adding default schema
@@ -404,7 +404,7 @@ Client hostname: hostname.domainname.net
 Realm: domainname.net
 DNS Domain: domainname.net
 IPA Server: hostname.domainname.net
-BaseDN: dc=guamira,dc=net
+BaseDN: dc=domainname,dc=net
 
 Configured /etc/sssd/sssd.conf
 Systemwide CA database updated.
@@ -442,3 +442,4 @@ Be sure to back up the CA certificates stored in /root/cacert.p12
 These files are required to create replicas. The password for these
 files is the Directory Manager password
 The ipa-server-install command was successful
+
